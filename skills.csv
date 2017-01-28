@@ -1,0 +1,33 @@
+id,value,color
+Andy King,
+Andy King.Front-End,
+Andy King.Front-End.Design,1,#808080
+Andy King.Front-End.Ps,0.5,#2E2575
+Andy King.Front-End.HTML & CSS,3,#E54F24
+Andy King.Front-End.SVG,1.5,#FF9900
+Andy King.Front-End.Bootstrap,3,#563B7E
+Andy King.Front-End.JavaScript World,
+Andy King.Front-End.JavaScript World.JavaScript,3,#D6BA33
+Andy King.Front-End.JavaScript World.JQuery,3,#1169AE
+Andy King.Front-End.JavaScript World.D3 js,2.5,#F6854D
+Andy King.Back-End,
+Andy King.Back-End.PHP,1.5,#617CBE
+Andy King.Back-End.C++,1,#0073AD
+Andy King.Back-End.SQL,1.5,#E58E00
+Andy King.Back-End.Java World,
+Andy King.Back-End.Java World.Java SE,3,#EB2C2F
+Andy King.Back-End.Java World.JSP,2,#EB2C2F
+Andy King.Back-End.Java World.Hibernate,2.5,#59666C
+Andy King.Back-End.Java World.Spring MVC / Boot,3,#6DB33F
+Andy King.Back-End.Java World.Spring Data,2.5,#6DB33F
+Andy King.Back-End.Java World.Spring Security,2.5,#5FA134
+Andy King.Back-End.Java World.Thymeleaf,3,#005F0F
+Andy King.Databases,
+Andy King.Databases.MySQL,2.5,#00618A
+Andy King.SysAdmin,
+Andy King.SysAdmin.VPS & SharedHost,2,#808080
+Andy King.SysAdmin.Linux,2.5,#040404
+Andy King.SysAdmin.Apache & Tomcat,2,#CA212F
+Andy King.CMS,
+Andy King.CMS.Wordpress,1.5,#00A0D2
+Andy King.CMS.Drupal,1.5,#0678BE
