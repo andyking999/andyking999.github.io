@@ -93,8 +93,8 @@
         hexwidth = 960 - hexmargin.left - hexmargin.right,
         hexheight = 300 - hexmargin.top - hexmargin.bottom;
 
-    var randomX = d3.random.normal(width / 2, 80),
-        randomY = d3.random.normal(height / 2, 80),
+    var randomX = d3.random.normal(hexwidth / 2, 80),
+        randomY = d3.random.normal(hexheight / 2, 80),
         points = d3.range(2000).map(function() {
             return [randomX(), randomY()];
         });
