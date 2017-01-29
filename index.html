@@ -85,8 +85,8 @@
 
 <script>
 var hexmargin = {top: 20, right: 20, bottom: 30, left: 40},
-    hexwidth = 960 - margin.left - margin.right,
-    hexheight = 300 - margin.top - margin.bottom;
+    hexwidth = 960 - hexmargin.left - hexmargin.right,
+    hexheight = 300 - hexmargin.top - hexmargin.bottom;
 
 var randomX = d3.random.normal(width / 2, 80),
     randomY = d3.random.normal(height / 2, 80),
@@ -140,7 +140,7 @@ hexsvg.append("g")
     .attr("d", hexbin.hexagon())
     .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
     .style("fill", function(d) { return hexcolor(d.length); });
-    
+
     // main svg
     var svg = d3.select("nodes"),
         width = +svg.attr("width"),
