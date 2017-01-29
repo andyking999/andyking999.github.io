@@ -57,6 +57,8 @@
 </style>
 
 <body>
+    <a href="AndyKingResume2017.docx">Andy King Resume.docx</a>
+    <a href="AndyKingResume2017.pdf">Andy King Resume.pdf</a>
     <svg width="960" height="1100"></svg>
 </body>
 
@@ -66,7 +68,7 @@
     var svg = d3.select("svg"),
         width = +svg.attr("width"),
         height = +svg.attr("height"),
-        g = svg.append("g").attr("transform", "translate(20,0)"); // move right 20px.
+        g = svg.append("g").attr("transform", "translate(60,0)"); // move right 20px.
 
     // x-scale and x-axis
     var experienceName = ["", "Basic 1.0", "Alright 2.0", "Handy 3.0", "Expert 4.0", "Guru 5.0"];
@@ -171,20 +173,20 @@
         // Attach axis on top of the first leaf datum.
         //var firstEndNode = g.select(".node--leaf");
         //firstEndNode.insert("g")
-            //.attr("class", "xAxis")
-            //.attr("transform", "translate(" + 7 + "," + -14 + ")")
-            //.call(xAxis);
+        //.attr("class", "xAxis")
+        //.attr("transform", "translate(" + 7 + "," + -14 + ")")
+        //.call(xAxis);
 
         // tick mark for x-axis
         //firstEndNode.insert("g")
-            //.attr("class", "grid")
-            //.attr("transform", "translate(7," + (height - 15) + ")")
-            //.call(d3.axisBottom()
-                //.scale(xScale)
-                //.ticks(5)
-                //.tickSize(-height, 0, 0)
-                //.tickFormat("")
-            //);
+        //.attr("class", "grid")
+        //.attr("transform", "translate(7," + (height - 15) + ")")
+        //.call(d3.axisBottom()
+        //.scale(xScale)
+        //.ticks(5)
+        //.tickSize(-height, 0, 0)
+        //.tickFormat("")
+        //);
 
         // Emphasize the y-axis baseline.
         svg.selectAll(".grid").select("line")
