@@ -74,84 +74,14 @@
 </style>
 
 <body>
-    <svg id="hex" width="960" height="300"></svg>
     <a href="AndyKingResume2017.docx">Andy King Resume.docx</a>
     <a href="AndyKingResume2017.pdf">Andy King Resume.pdf</a>
     <svg id="nodes" width="960" height="1100"></svg>
 </body>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="d3.hexbin.min.js"></script>
 
 <script>
-    var hexmargin = {
-            top: 20,
-            right: 20,
-            bottom: 30,
-            left: 40
-        },
-        hexwidth = 960 - hexmargin.left - hexmargin.right,
-        hexheight = 300 - hexmargin.top - hexmargin.bottom;
-
-    var randomX = d3.random.normal(hexwidth / 2, 80),
-        randomY = d3.random.normal(hexheight / 2, 80),
-        points = d3.range(2000).map(function() {
-            return [randomX(), randomY()];
-        });
-
-    var hexcolor = d3.scale.linear()
-        .domain([0, 20])
-        .range(["white", "steelblue"])
-        .interpolate(d3.interpolateLab);
-
-    var hexbin = d3.hexbin()
-        .size([width, height])
-        .radius(20);
-
-    var hexx = d3.scale.identity()
-        .domain([0, width]);
-
-    var hexy = d3.scale.linear()
-        .domain([0, height])
-        .range([height, 0]);
-
-    var hexxAxis = d3.svg.axis()
-        .scale(x)
-        .orient("bottom")
-        .tickSize(6, -height);
-
-    var hexyAxis = d3.svg.axis()
-        .scale(y)
-        .orient("left")
-        .tickSize(6, -width);
-
-    var hexsvg = d3.select("hex")
-        .attr("width", hexwidth + hexmargin.left + hexmargin.right)
-        .attr("height", hexheight + hexmargin.top + hexmargin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + hexmargin.left + "," + hexmargin.top + ")");
-
-    hexsvg.append("clipPath")
-        .attr("id", "clip")
-        .append("rect")
-        .attr("class", "mesh")
-        .attr("width", hexwidth)
-        .attr("height", hexheight);
-
-    hexsvg.append("g")
-        .attr("clip-path", "url(#clip)")
-        .selectAll(".hexagon")
-        .data(hexbin(points))
-        .enter().append("path")
-        .attr("class", "hexagon")
-        .attr("d", hexbin.hexagon())
-        .attr("transform", function(d) {
-            return "translate(" + d.x + "," + d.y + ")";
-        })
-        .style("fill", function(d) {
-            return hexcolor(d.length);
-        });
-
     // main svg
     var svg = d3.select("nodes"),
         width = +svg.attr("width"),
